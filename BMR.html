@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>BMR</title>
+        <link rel="stylesheet" href="styles.css">
+    <div class="Container">
+    <label style="width:538px; font-size:3vw;" >Enter the details:</label>
+    <form name="first" class="BMRform">
+        
+        <br>
+        <br>
+        <label>Height:</label><input type="text" name="Height" >
+        <br>
+        <br>
+        <label>Weight:</label><input type="text" name="Weight">
+        <br>
+        <br>
+        <label>Age(in years):</label><input type="text" name="Age">
+        <br>
+        <br>
+        <!-- <input type="radio" name="rad1" onclick="final(1)" checked> Male
+        <input type="radio" name="rad1" onclick="final(0)"> Female -->
+        <label></label><input type="button" value="Calculate" onClick="final()"> 
+        <br>
+        <br>
+        <label>BMR:</label><input type="text" name="Result">
+        
+    </form>
+    </div>
+
+    <script type="text/javascript">
+        function final(){
+        var h,w,age,answer;
+        h=parseFloat(document.first.Height.value);
+        w=parseFloat(document.first.Weight.value);
+        age=parseInt(document.first.Age.value);
+        answer=66.47+(13.75*w)+(5.003*h)-(6.755*age);
+        document.first.Result.value=answer;
+    }
+    </script>
+    </head>
+</html>

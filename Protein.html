@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Protein intake calculator</title>
+    <div class="Container">
+    <label style="width:538px; font-size:3vw;" >Enter the details:</label>
+    <form name="first" class="Proteinform">
+        <label>Weight(kg):</label><input type="text" name="Weight">
+        <br>
+        <br>
+        <label></label><input type="button" value="Calculate" onClick="Protein_intake()"> 
+        <br>
+        <br>
+        <label>Minimum protein intake:</label><input type="text" name="Result">
+        
+    </form>
+    </div>
+
+    <script type="text/javascript">
+        function Protein_intake(){
+            var w,result;
+            w=Number(document.first.Weight.value);
+            result=((w*2.20462)/20)*7;
+            document.first.Result.value=result;
+
+        }
+    </script>
+</head>
+</html>

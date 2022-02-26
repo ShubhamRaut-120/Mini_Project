@@ -1,0 +1,50 @@
+div {
+    margin-bottom: 10px;
+  }
+  label {
+    display: inline-block;
+    width: 203px;
+    text-align: right;
+  }
+  .Container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 30px;
+  background: #f0e68c;
+  }
+  .BMIform {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  }
+
+  .BMRform {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    }
+
+    .IBWform {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        }
+
+        .Proteinform{
+            width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        }
+
+        .BodyFatform{
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            }
+
+            .calorieform{
+                width: 80%;
+                margin: 0 auto;
+                padding: 20px;
+                }
+          

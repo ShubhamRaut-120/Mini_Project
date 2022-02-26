@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Ideal Body Weight Calculator</title>
+    <div class="Container">
+    <label style="width:538px; font-size:3vw;" >Enter the details:</label>
+    <form name="first" class="IBWform">
+        
+        <label>Height(cm):</label><input type="text" name="Height" >
+        <br>
+        <br>
+        <label></label><input type="button" value="Calculate" onClick="IBW()"> 
+        <br>
+        <br>
+        <label>Ideal Body Weight:</label><input type="text" name="Result">
+        
+    </form>
+    </div>
+
+    <script type="text/javascript">
+        function IBW(){
+            var h,result;
+            h=Number(document.first.Height.value);
+           
+            result=50 + (0.91 * [h -152.4]);
+            document.first.Result.value=result;
+
+        }
+    </script>
+</head>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Body Fat Calculator</title>
+    <div class="Container">
+    <label style="width:538px; font-size:3vw;" >Enter the details:</label>
+    <form name="first" class="calorieform">
+        <label>Weight:</label><input type="text" name="Weight">
+        <br>
+        <br>
+        <label></label><input type="button" value="Calculate" onClick="calorie()"> 
+        <br>
+        <br>
+        <label>Calorie intake:</label><input type="text" name="Result">
+        
+    </form>
+    </div>
+
+    <script type="text/javascript">
+        function calorie(){
+            var w;
+            w=Number(document.first.Weight.value);
+            result=w*24;
+            document.first.Result.value=result;
+        }
+    </script>
+</head>
+</html>

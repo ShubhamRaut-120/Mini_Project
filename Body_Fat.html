@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Body Fat Calculator</title>
+    <div class="Container">
+    <label style="width:538px; font-size:3vw;" >Enter the details:</label>
+    <form name="first" class="BodyFatform">
+        
+        <label>Waist:</label><input type="text" name="Waist" >
+        <br>
+        <br>
+        <label>Weight:</label><input type="text" name="Weight">
+        <br>
+        <br>
+        <label></label><input type="button" value="Calculate" onClick="BMI()"> 
+        <br>
+        <br>
+        <label>Body fat percentage:</label><input type="text" name="Result">
+        
+    </form>
+    </div>
+
+    <script type="text/javascript">
+        function BMI(){
+            var waist,w,lean_mass,body_fat_weight,result;
+            waist=Number(document.first.Waist.value);
+            w=Number(document.first.Weight.value);
+            lean_mass=(w * 1.082) + 94.42 - waist * 4.15;
+            body_fat_weight=w-lean_mass;
+            result=body_fat_weight/w;
+            document.first.Result.value=result;
+        }
+    </script>
+</head>
+</html>
